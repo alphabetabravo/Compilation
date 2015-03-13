@@ -1,0 +1,36 @@
+1 expression :
+
+	variable :
+		appel de fonction
+		addition 2 entiers
+		addition 2 variables
+		addition de 2 fonctions
+		chaine de caractére
+		un entier
+		addition d'une variable et d'un entier
+		liste de variables
+		
+	def :
+		nom + "(" + arguments + "," + arguments + ")" + ":" 
+		arguments :
+			variables
+			entiers
+			
+			
+	appel de fonction :
+		nom + "(" + arguments + "," + arguments + ")"
+		
+	while
+		variables + "<" + appel de fonction ou
+		variables + "<" + variables
+		
+	for
+		variable + "in" + variable + ":"
+	
+	if
+		variables + "<" + variables + ":"
+		
+	print
+		
+		
+	
