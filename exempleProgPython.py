@@ -3,11 +3,11 @@ def Valeurs(var_a,var_b):
     
 print("Donnez moi la valeur de a")
 
-var_a = input ()
+var_a = raw_input()
 
 print("Donnez moi la valeur de b")
 
-var_b = input ()
+var_b = raw_input()
 
 var_c = int(var_a) + int(var_b)
 
