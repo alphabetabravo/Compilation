@@ -1,0 +1,21 @@
+### Starting build.
+# Target: Parser.ml.depends, tags: { extension:ml, file:Parser.ml, ocaml, ocamldep, package(decap), quiet }
+/usr/bin/ocamldep.opt -pp pa_ocaml -modules Parser.ml > Parser.ml.depends # cached
+# Target: AST.ml.depends, tags: { extension:ml, file:AST.ml, ocaml, ocamldep, package(decap), quiet }
+/usr/bin/ocamldep.opt -pp pa_ocaml -modules AST.ml > AST.ml.depends # cached
+# Target: AST.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:AST.cmo, file:AST.ml, implem, ocaml, package(decap), quiet }
+/usr/bin/ocamlc.opt -c -I /usr/lib64/ocaml -I /usr/lib64/ocaml/decap -pp pa_ocaml -o AST.cmo AST.ml # cached
+# Target: expr_sem.ml.depends, tags: { extension:ml, file:expr_sem.ml, ocaml, ocamldep, package(decap), quiet }
+/usr/bin/ocamldep.opt -pp pa_ocaml -modules expr_sem.ml > expr_sem.ml.depends
+# Target: expr_sem.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:expr_sem.cmo, file:expr_sem.ml, implem, ocaml, package(decap), quiet }
+/usr/bin/ocamlc.opt -c -I /usr/lib64/ocaml -I /usr/lib64/ocaml/decap -pp pa_ocaml -o expr_sem.cmo expr_sem.ml
++ /usr/bin/ocamlc.opt -c -I /usr/lib64/ocaml -I /usr/lib64/ocaml/decap -pp pa_ocaml -o expr_sem.cmo expr_sem.ml
+File "expr_sem.ml", line 26, characters 22-362:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+(RInt _|RBool _|RChaine _)
+File "expr_sem.ml", line 54, characters 66-70:
+Error: This expression has type AST.result list * AST.variables
+       but an expression was expected of type 'a list
+Command exited with code 2.
+# Compilation unsuccessful.

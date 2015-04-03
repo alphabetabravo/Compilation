@@ -4,3 +4,13 @@ S 3  : Compilateur fini + Test
 
 A rendre : 
 README : Comment compiler et tester le code
+
+ocamlbuild -pp pa_ocaml -pkgs decap Parser.cmo
+
+compile des expression: 
+2 solutions:
+		1) type-of-expr:
+			expression -> ty 
+			
+		type ty=
+		TyInt|tyBool|tyList of ty  
